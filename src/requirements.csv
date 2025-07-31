@@ -1,0 +1,12 @@
+ID,ParentID,Level,Category,Description,LinkedFunction,LinkedTest,Status
+REQ-0.0,,1,Testability,Each requirement shall be testable through a unit test function,,,
+REQ-0.1,REQ-0.0,2,Testability,Test functions shall return system_error_message enum values only,,,
+REQ-0.2,,1,Traceability,Each requirement shall be linked to source code and a test result,,,
+
+REQ-1.0,,1,Initialization,System shall initialize all node memory to zero on power-up,,,
+REQ-1.1,REQ-1.0,2,Memory Protection,Node 0 shall remain set to zero throughout runtime,,,
+REQ-1.2,REQ-1.0,2,Access,Nodes above index 0 shall be settable and gettable,,,
+REQ-1.2.1,REQ-1.2,3,Access,Node values set via set_Node() shall be retrievable via get_Node(),,,
+REQ-1.2.2,REQ-1.2,3,Error Handling,set_Node() shall return error when accessing out-of-range index,,,
+REQ-1.2.3,REQ-1.2,3,Error Handling,get_Node() shall return an error and a dummy value on out-of-range access,,,
+REQ-1.3,REQ-1.0,2,Verification,System shall report memory integrity diagnostics through error enums,,,

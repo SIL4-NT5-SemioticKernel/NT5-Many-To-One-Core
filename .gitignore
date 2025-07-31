@@ -1,0 +1,10 @@
+bin/
+src/build/
+*.exe
+*.log
+*.o
+*.obj
+*.out
+*.a
+*.so
+*.dll
